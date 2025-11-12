@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canva Hero Section</title>
+    <title>Canva Homepage Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <div class="nav-left">
-                <a href="#" class="logo" aria-label="Canva Home">Canva</a>
-            </div>
-            <div class="nav-center">
+    <div class="container">
+        <header>
+            <div class="logo">Canva</div>
+            <nav>
                 <ul>
                     <li><a href="#">Design</a></li>
                     <li><a href="#">Product</a></li>
@@ -21,23 +22,39 @@
                     <li><a href="#">Education</a></li>
                     <li><a href="#">Help</a></li>
                 </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="signup-btn">Sign up</button>
+                <button class="login-btn">Log in</button>
             </div>
-            <div class="nav-right">
-                <button class="btn btn-primary" aria-label="Sign up">Sign up</button>
-                <button class="btn btn-secondary" aria-label="Log in">Log in</button>
-            </div>
-        </nav>
-    </header>
+        </header>
 
-    <main>
-        <section class="hero" aria-labelledby="hero-headline">
-            <h1 id="hero-headline">A new era<br>of imagination</h1>
-            <p class="subheading">Discover a whole new world of skills and tools designed to put your imagination to work.</p>
-            <div class="cta-buttons">
-                <button class="btn btn-cta-light" aria-label="Start designing for free">Start designing for free</button>
-                <button class="btn btn-cta-dark" aria-label="Explore our launches">Explore our launches</button>
-            </div>
-        </section>
-    </main>
+        <main>
+            <section class="hero">
+                <h1>
+                    <span class="large-text">A new era</span>
+                    <span class="small-text">of imagination</span>
+                </h1>
+                <p class="subtitle">Discover a whole new world of skills and tools designed to put your imagination to work.</p>
+                <div class="cta-buttons">
+                    <button class="start-designing-btn">Start designing for free</button>
+                    <button class="explore-launches-btn">Explore our launches</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="decorations">
+        <div class="shape shape-blob"></div>
+        <div class="shape shape-t"></div>
+        <div class="shape shape-prism"></div>
+        <div class="shape shape-cap">
+            <svg width="120" height="80" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60 0L0 30L60 60L120 30L60 0Z" fill="#A100FF"/>
+                <path d="M20 35L20 55L60 75L100 55L100 35L60 55L20 35Z" fill="#8E00E6"/>
+                <rect x="55" y="50" width="10" height="20" fill="#FFD700"/>
+            </svg>
+        </div>
+    </div>
 </body>
 </html>
